@@ -1,5 +1,5 @@
 const input = document.getElementById('file-input');
-
+const linkPlaceholder = document.querySelector('.a-link');
 const url = 'https://file.io/';
 
 function sendFile(){
@@ -17,8 +17,11 @@ function sendFile(){
         .then(data => {
             const res = JSON.parse(data);
             console.log(`This is the one-time use link for your data!: ${res.link}`);
+            linkPlaceholder.href = res.link;
+            linkPlaceholder.innerHTML = res.link;
         })
         .catch(err => console.log(err));
+
 }
 
 
