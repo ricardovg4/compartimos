@@ -1,0 +1,125 @@
+
+:root{
+    --primary-color: #0C6980;
+    --secondary-color: #00A8A8;
+    --accent: #2EB5E0;
+    --extra: #C4DBE0;
+    --strong-accent: #E57876;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background: url('../images/humanHandsSmall.jpg'), linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten, normal;
+    /* font-size: 16px; */
+    font-size: .8vw;
+    font-family: "Orienta", sans-serif;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.5em;
+    color: white;
+    text-align: right;
+}
+
+.h1{
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+
+.h2{
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--extra);
+}
+
+.main{
+    background: #fff;
+    position: relative;
+    bottom: 5%;
+    right: 20%;
+    border-radius: 15px;
+    padding: 2em;
+    padding-top: 1em;
+    /* width: 325px; */
+    width: 20%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main::before{
+    content: '';
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+#file-input{
+    display: none;
+}
+
+.main__img{
+    margin-bottom: .8em;
+    cursor: pointer;
+}
+
+.main__img:hover{
+    filter: brightness(180%);
+}
+
+.h2-variant{
+    margin-bottom: .5em;
+
+}
+
+.p-variant{
+    text-decoration: line-through;
+}
+
+.logo{
+    align-self: flex-start;
+}
+
+.logo__span{
+    font-family: 'Kanit', sans-serif;
+    font-size: 7.5em;
+    font-weight: 800;
+    color: var(--strong-accent);
+}
