@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Kanit|Orienta" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,700,800|Orienta&display=swap" rel="stylesheet">
-    <title>File.io Experiment</title>
+    <title>Compartimos.co - Envio de archivos hasta 5GB</title>
 </head>
 <body>
     <section class="section">
         <header class="header">
             <h1 class="h1">Tu envias, ellos reciben.</h1>
-            <h2 class="h2">14 dias, una única descarga.</h2>
+            <h2 class="h2">14 dias, una única descarga, hasta <span class="accent">5GB.</span></h2>
             <h2 class="h2">Luego, desaparece.</h2>
         </header>
         <main class="main">
@@ -22,11 +22,21 @@
                     <img src="./assets/images/plus-circle.svg" alt="plus-icon" class="main__img">
                 </label>
                 <input id="file-input" type="file">
+                <h2 class="h2-variant">Escoje el archivo</h2>
+                <p class="p--code"></p>
             </div>
-            <h2 class="h2-variant">Escoje el archivo</h2>
-            <p class="p-variant">O arrastra y suelta aquí</p>
-            <p class="p-link"></p>
-            <a href="" class="a-link"></a>
+            <div class="main__line"></div>
+            <div class="form-container">
+                <p class="p">Tienes un codigo?</p>
+                <form action="" class="form form--main">
+                    <input type="text" class="form__text-input">
+                    <button class="form__btn">
+                        <img src="./assets/images/search.svg" alt="search icon" class="form__btn__img">
+                    </button>
+                </form>
+                <a href="" class="a-download"></a>
+                <p class="p p--error"></p>
+            </div>
 
 
         </main>
@@ -35,5 +45,4 @@
         </div>
     <script src="./index.js"></script>
 </body>
-
 </html>
