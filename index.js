@@ -42,7 +42,7 @@ function retrieveFile(event){
         })
         .catch(err => {
             down.innerHTML = '';
-            pError.innerHTML = 'This code has already been used or is non-existent!'
+            pError.innerHTML = 'Este codigo ya ha sido usado o no existe!';
             // console.log('not a 200')
         })
         .then(data => {
